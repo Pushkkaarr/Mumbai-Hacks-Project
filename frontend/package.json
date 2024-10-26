@@ -13,6 +13,7 @@
     "chart.js": "^4.4.5",
     "cors": "^2.8.5",
     "leaflet": "^1.9.4",
+    "leaflet-heatmap": "^1.0.0",
     "leaflet.heat": "^0.2.0",
     "mongoose": "^8.7.0",
     "react": "^18.0.0",
