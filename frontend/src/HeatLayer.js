@@ -60,7 +60,11 @@ const HeatmapLayer = ({ latlngs, userLocation, dangerLevel }) => {
 
     }, [latlngs, userLocation, dangerLevel]);
 
-    return <div id="map-canvas" style={{ width: '100%', height: '300px' }}></div>;
+    return (
+    
+    <div id="map-canvas" style={{ width: '100%', height: '300px' }}></div>
+
+    )
 };
 
 export default HeatmapLayer;

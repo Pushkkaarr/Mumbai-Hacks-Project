@@ -62,17 +62,10 @@ const HeatmapDemo = ({ userLatLng, dangerLevel }) => {
     }, [userLatLng, dangerLevel]);
 
     return (
-        <div className="flex">
-            <div className="w-1/4 p-4 bg-gray-200 rounded-lg shadow-lg mr-4">
-                <p className="mb-4">Heatmap demo using coordinates from major Indian cities.</p>
+        <div className="">
+            <div className=" p-4 bg-gray-200 rounded-lg shadow-lg mr-4">
                 <div className="mb-2 text-lg font-semibold">Current Zone</div>
-                <div id="map" style={{ width: '100%', height: '300px', position: 'relative' }}></div>
-                <HeatmapLayer 
-                    latlngs={heatData} 
-                    userLocation={userLocation} 
-                    dangerLevel={dangerLevel} 
-                    options={{ radius: 10, blur: 15, minOpacity: 0.05 }} // Smaller radius for heat points
-                />
+                <div id="map" style={{ width: '100%', height: '300px'}}></div>
                 {userLocation && (
                     <div>Your location: {userLocation[0]}, {userLocation[1]}</div>
                 )}
